@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 
 
-image = Image.open("simba")
+image = Image.open("baboon.jpg")
 
 print(image.format)
 print(image.size)
@@ -46,7 +46,7 @@ def kuwahara_filter(image):
 
     return result
 
-img = Image.open("baboon.png")
+img = Image.open("baboon.jpg")
 img_arr = np.array(img)
 nueva_imagen = np.pad(img_arr, ((2, 2), (2, 2),(0,0)), mode='edge')
 
